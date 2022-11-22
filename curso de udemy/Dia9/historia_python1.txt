@@ -1,0 +1,7 @@
+Características[editar]
+Algunos de los mayores cambios anunciados para Python 3.0 fueron:
+•	Cambiar la instrucción print de modo que sea una función "built-in", no una instrucción. Esto ha hecho que sea más fácil cambiar un módulo para usar una función print diferente, así como hacer la sintaxis más regular. En Python 2.6 y 2.7 esta característica puede ser habilitada usando from __future__ import print_function.29
+•	Moviendo reduce (pero no map o filter) fuera del espacio de nombres "built-in" dentro de "functools".30
+•	Adicionar soporte para anotación opcional en funciones que pueda ser usar para la declaración informal de tipos u otros propósitos.31
+•	Unificar los tipos str/unicode, representando texto, e introduciendo un tipo immutable bytes; y un más correspondiente tipo mutable bytearray, ambos de los cuales representan "arrays" de bytes;32
+•	Eliminar compatibilidad hacia atrás, incluidas clases "old-style", excepciones "string", e implícitos "imports" relativos.
