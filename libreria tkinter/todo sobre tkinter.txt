@@ -1,0 +1,50 @@
+Libreria tkinter:
+
+Tk():se usa para inicializar la ventana de tk.[root.Tk()].
+tk.Tk():se usa para inicializar la ventana pero cuando importamos el modulo ttk.[root = tk.Tk()].
+title():se usa para ponerle el titulo a la ventana[root.title()].
+geometry():se usa para colocarle la dimension a la ventana[roo.geometry("500x800")].
+text=:se usa para colocar el nombre a un boton o ha un label.
+config():se usa para ponerle el color de fondo a la ventana y para otras cosas que no se[(root.config(bg="goldenrod3"))].
+command=:se usa para asignarle que va hacer el boton.
+Button():se usa para inicializar un boton[boton1 = Button()].
+Label():se usa para inicializar un label[labe1=Label()].
+pack():se usa para que se muestre algo en la ventana[boton1.pack].
+side=:se usa para asignarle un lugar en especifico a un boton o a un label dentro del pack[label1.pack(side=RIGHT)].
+mainloop():se usa para que la ventana de tkinter no se cierre[root.mainloop()].
+grid():se usa para ubicar los label y los botones[(row=0, column=1)]
+place():este hace lo mismo que el grid pero con coordenadas x, y[(x=30,y=500)].
+get():se usa para capturar lo que escribe el usuario[(nombre.get)].
+StringVar():se usa para almacenar lo se escribe por teclado[(nombre = StringVar()].
+bd:se usa para darle u  n borde[(bd=4)].
+bg:se usa para darle un color de fondo[(bg="red")].
+font:se usa para colocarle la fuente[(font="curier 10")].
+resizable():se usa para que la ventana no se le modifique el tamaño[(root.resizable(0,0))].
+Entry:es una caja vacia que se usa para que el usuario entre informacion o para mostrar en la ventana[(entrada=Entry())].
+state:se usa para desabilitar o habilitar, como por ejemplo el Entry[(state='disable')].
+Radiobutton():se usa para colocar esos botoncitos de selecion[(radio1=Radiobutton(root, text='boton1',etc)].
+IntVar():se usa para colocarsela a las variables cua ndo se va a trabajar con numeros[(num=InVar())].
+PhotoImage():se usa para agregar imagenes a la ventana[(imagen =PhotoImage(file="comida.jpg")].
+Frame():se usa para organizar los elementos dentro de la ventana[(frame = Frame(root, etc)
+anchor=:se usa ubicar algo dentro de la ventana pero con norte, sur, este, oeste, pero en ingles ejemplo:si es oeste debes poner 'w' y dentro del pack[(.pack(anchor='w'))].
+Checkbutton():se usa igual que el Radiobutton pero en forma de cuadros y se pueden seleccionar varios a la vez[(Checkbutton(frame,text="lechuga", variable='queso'))]
+onvalue=:es cuando el usuario seleccione se va poner en 1 y pone dentro del Checkbutton[(Checkbutton(frame, text='aguacate',  onvalue=1))].
+offvalue=:y cuando no seleccione nada el Checkbutton va estar en cero y va estar dentro del Checkbutton[(Checkbutton(frame, text='aguacate',  offvalue=0))].
+variable=:se usa para nombrar una variable dentro del Checkbutton[(Checkbutton(frame, text='aguacate', variable=queso, offvalue=0))].
+Menu():se usa para crear un menu dentro de la ventana[(mi_manu = Menu(root))].
+add_command():se usa para crear opcines en el sub menu dentro del menu[(archivo_menu.add_command(label='abrir'))].
+add_separator():se usa para colocarle un separador dentro del sub menu[(archivo_menu.add_separator())].
+add_cascade():se usa para colocar las opciones del sub menu en cascada[(archivo_menu.add_cascade(label="Archivo", menu=archivoMenu)].
+tearoff=:se usa para la lagrima que es un separador que viene por default en el sub menu [(edit_menu = Menu(menuBar,tearoff=0))].
+quit:se usa para asignarselo a la opcion de salir[(archivoMenu.add_command(label='Salir', command=root.quit))].
+Spinbox():se usa para seleccionar opciones predeterminadas[(seleccionar = Spinbox(root, values=('pais', 'ciudad', 'sector')))].
+askquestion():se usa para hacer una pregunta en la ventana emergente[(messagebox.askquestion("cerrar", message="Estas seguro?"))].
+messagebox:se usa para crear una ventana emergente[(messagebox.askquestion("cerrar", message="Estas seguro?"))].
+showinfo():se usa para brindar informacion en una ventana emergente[(messagebox.showinfo("Version", message="Version 1.0"))].
+showerror():se usa para mostrar una ventana emergente de error[(messagebox.showerror(""Error Critico"", message="se encotro un error fatal"))].
+message=:muestra el mensaje dentro de una ventana emergente[(messagebox.showerror(""Error Critico"", message="se encotro un error fatal"))].
+showwarning():muestra un mensaje de atencion en una ventana emergente[(message.showwarning("ATENCION", message="se eliminaran todos los elementos"))].
+Listbox():se usa para crear y agregar por el usuario dentro de la ventana una lista de cosas[(lista_productos = Listbox(root, width=50)) luego lista_productos.insert(0, "carne")].
+width=:se usa para ponerle el ancho a un elemento o a la ventana[(text= Text(root, width=8))].
+height=:se usa para ponerle el alto a un elemento o a la ventana[(text= Text(root, height=8))].
+Separator():se usa para colocar una linea de separacion en la venta[(separar = ttk.Separator(root, orient = "horizontal").pack(fill='x'))].
